@@ -72,7 +72,6 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
             Person result = new Person();
             result.setName(rs.getString("name"));
-            result.setAge(rs.getInt("age"));
             return result;
         }
     }
