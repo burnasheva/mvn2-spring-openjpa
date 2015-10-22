@@ -30,7 +30,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         assertEquals(1, countRowsInTable("person"));
 
         Person david = getSinglePerson();
-
+        assertEquals("Name not saved correctly", "David", david.getName());
         assertEquals("Age not saved correctly", 28, david.getAge());
     }
 
