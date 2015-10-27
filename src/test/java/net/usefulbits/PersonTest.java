@@ -62,7 +62,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         fPersonDao.update(person);
         fPersonDao.getEntityManager().flush();
 
-        Person jane = getSinglePerson()
+        Person jane = getSinglePerson();
         assertEquals(1, countRowsInTable("person"));
         assertEquals("The name didn't get changed", "Jane", jane.getName());
         assertEquals("The Age didn't get changed", 21, jane.getAge());
