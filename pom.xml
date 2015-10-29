@@ -4,6 +4,8 @@
 	<groupId>mvn2-spring-openjpa</groupId>
 	<artifactId>mvn2-spring-openjpa</artifactId>
 	<packaging>jar</packaging>
+	
+	
 	<version>1.0-SNAPSHOT</version>
 	<name>mvn2-spring-openjpa</name>
 	<url>http://github.com/spidie/mvn2-spring-openjpa
