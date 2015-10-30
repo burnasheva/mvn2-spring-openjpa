@@ -9,6 +9,8 @@
 	<url>http://github.com/spidie/mvn2-spring-openjpa
 	</url>
 	
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
