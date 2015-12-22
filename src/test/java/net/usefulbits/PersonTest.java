@@ -25,7 +25,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
-    public void testSave() {
+    public void test_save_smth_bla() {
         createAndSavePerson("David", 28);
         assertEquals(1, countRowsInTable("person"));
 
