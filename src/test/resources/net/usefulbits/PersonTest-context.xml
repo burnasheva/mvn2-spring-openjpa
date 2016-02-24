@@ -26,7 +26,9 @@
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
 		p:dataSource-ref="dataSource" p:jpaVendorAdapter-ref="jpaAdapter">
 		<property name="loadTimeWeaver">
+			
 			<bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
+			
 		</property>
 	</bean>
 
