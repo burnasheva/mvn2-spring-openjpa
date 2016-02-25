@@ -1,4 +1,4 @@
-	package net.usefulbits.model;
+package net.usefulbits.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
