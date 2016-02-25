@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 import net.usefulbits.dao.PersonDao;
 import net.usefulbits.model.Person;
 
