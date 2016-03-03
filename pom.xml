@@ -82,6 +82,5 @@
 		<jdbc.password></jdbc.password>
 		<jpa.database>HSQL</jpa.database>
 		<jpa.showSql>true</jpa.showSql>
-		
 	</properties>
 </project>
