@@ -84,6 +84,7 @@
 	</build>
 	
 	<properties>
+		
 		<jdbc.driverClassName>org.hsqldb.jdbcDriver
 		</jdbc.driverClassName>
 		<jdbc.url><![CDATA[jdbc:hsqldb:file:target/testdb;shutdown=true]]></jdbc.url>
