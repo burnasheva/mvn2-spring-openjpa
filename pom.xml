@@ -88,9 +88,11 @@
 		<jdbc.driverClassName>org.hsqldb.jdbcDriver
 		</jdbc.driverClassName>
 		<jdbc.url><![CDATA[jdbc:hsqldb:file:target/testdb;shutdown=true]]></jdbc.url>
+		
 		<jdbc.username>sa</jdbc.username>
 		<jdbc.password></jdbc.password>
 		<jpa.database>HSQL</jpa.database>
 		<jpa.showSql>true</jpa.showSql>
+		
 	</properties>
 </project>
