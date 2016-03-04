@@ -20,7 +20,6 @@ directory.  Most likely you will need to put the release directory into a path w
 c:\projects\mvn2-spring-openjpa.
 What exactly does mvn2-spring-openjpa do? The short answer
 "mvn test" runs the JUnit test net.usefulbits.PersonTest.
-
 What exactly does mvn2-spring-openjpa do? The medium (but highly abbreviated) answer
 
 0. You run "mvn test" from within the mvn2-spring-jpa directory.
