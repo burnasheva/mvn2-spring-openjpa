@@ -15,7 +15,6 @@ What are the prerequisites for running mvn2-spring-jpa?
 1. Java 5 or greater. 
 2. Maven 2.  I am using release 2.0.9
 How do I run the tests in mvn2-spring-openjpa?
-
 Very simple.  After unzipping/untarring the file you downloaded, run "mvn test" from the mvn2-spring-jpa
 directory.  Most likely you will need to put the release directory into a path with no spaces.  I use
 c:\projects\mvn2-spring-openjpa.
