@@ -19,7 +19,6 @@ Very simple.  After unzipping/untarring the file you downloaded, run "mvn test" 
 directory.  Most likely you will need to put the release directory into a path with no spaces.  I use
 c:\projects\mvn2-spring-openjpa.
 What exactly does mvn2-spring-openjpa do? The short answer
-
 "mvn test" runs the JUnit test net.usefulbits.PersonTest.
 
 What exactly does mvn2-spring-openjpa do? The medium (but highly abbreviated) answer
