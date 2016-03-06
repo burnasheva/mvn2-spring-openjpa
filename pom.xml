@@ -83,5 +83,4 @@
 		<jpa.database>HSQL</jpa.database>
 		<jpa.showSql>true</jpa.showSql>
 	</properties>
-	
 </project>
