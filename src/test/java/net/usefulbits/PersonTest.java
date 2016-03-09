@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 import net.usefulbits.dao.PersonDao;
 import net.usefulbits.model.Person;
 
@@ -25,9 +24,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
-    public void testSave() {
-        System.out.println("123456");
-
+    public void test_save_smth_bla() {
         createAndSavePerson("David", 28);
         assertEquals(1, countRowsInTable("person"));
 
@@ -53,22 +50,6 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         assertEquals("Deleting person failed.", 0, countRowsInTable("person"));
     }
 
-    @Test
-    public void testUpdate() {
-        createAndSavePerson("David", 28);
-        Person person = fPersonDao.getById(0);
-        assertEquals("The Person didn't get saved.", 1, countRowsInTable("person"));
-
-        person.setName("Jane");
-        person.setAge(21);
-        fPersonDao.update(person);
-        fPersonDao.getEntityManager().flush();
-
-        Person jane = getSinglePerson();
-        assertEquals(1, countRowsInTable("person"));
-        assertEquals("The name didn't get changed", "Jane", jane.getName());
-        assertEquals("The Age didn't get changed", 21, jane.getAge());
-    }
 
     private Person getSinglePerson() {
         return simpleJdbcTemplate.queryForObject(
@@ -90,7 +71,6 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
             Person result = new Person();
             result.setName(rs.getString("name"));
-            result.setAge(rs.getInt("age"));
             return result;
         }
     }
