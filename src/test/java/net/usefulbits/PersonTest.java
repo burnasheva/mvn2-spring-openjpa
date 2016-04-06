@@ -1,5 +1,6 @@
 package net.usefulbits;
 
+import org.junit.Ignore;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
@@ -26,6 +27,10 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     @Test
     public void test_save_smth_bla() {
         System.out.println("123456");
+        System.err.println("123456");
+
+        System.out.println("http://user:123456@jetbrains.com");
+        System.err.println("http://user:123456@jetbrains.com");
 
         createAndSavePerson("David", 28);
         assertEquals(1, countRowsInTable("person"));
@@ -36,6 +41,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
+    @Ignore("http://user:123456@jetbrains.com")
     public void testGetById() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
@@ -44,6 +50,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
+    @Ignore("Age not saved correctly 123456")
     public void testDelete() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
