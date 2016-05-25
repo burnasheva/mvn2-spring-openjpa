@@ -3,10 +3,8 @@ package net.usefulbits;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
-
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 import net.usefulbits.dao.PersonDao;
 import net.usefulbits.model.Person;
 
