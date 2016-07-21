@@ -79,6 +79,7 @@
 		</plugins>
 	</build>
 	
+	
 	<properties>
 		<jdbc.driverClassName>org.hsqldb.jdbcDriver
 		</jdbc.driverClassName>
