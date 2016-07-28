@@ -30,6 +30,7 @@ public class Person {
     
     public void setAge(int age) {
         fAge = age;
+        fAge = age;
     }
     
     public int getAge() {
