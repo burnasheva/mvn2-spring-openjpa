@@ -11,6 +11,7 @@ public class Person {
     
     public void setId(long id) {
         fId = id;
+        fId = id;
     }
     
     @Id
@@ -19,6 +20,7 @@ public class Person {
     }
     
     public void setName(String name) {
+        fName = name;
         fName = name;
     }
     
