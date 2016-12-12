@@ -5,6 +5,7 @@
 	<groupId>mvn2-spring-openjpa</groupId>
 	<artifactId>mvn2-spring-openjpa</artifactId>
 	<packaging>jar</packaging>
+	
 	<version>${my.version}-SNAPSHOT</version>
 	<name>mvn2-spring-openjpa</name>
 	
