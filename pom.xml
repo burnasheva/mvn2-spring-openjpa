@@ -9,7 +9,6 @@
 	<name>mvn2-spring-openjpa</name>
 	
 	<dependencies>		
-		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
