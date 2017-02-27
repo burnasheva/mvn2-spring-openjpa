@@ -26,11 +26,22 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
 
     @Test
     public void test_save_smth_bla() {
-        System.out.println("123456");
-        System.err.println("123456");
+        try{
+            Thread.sleep(10000);
+        } catch (InterruptedException ie){
 
-        System.out.println("http://user:123456@jetbrains.com");
-        System.err.println("http://user:123456@jetbrains.com");
+        }
+
+
+        System.out.println("abcdefghijk\n" +
+                "lmnoprqst");
+        System.err.println("abcdefghijk\n" +
+                "lmnoprqst");
+
+        System.out.println("http://user:abcdefghijk\n" +
+                "lmnoprqst@jetbrains.com");
+        System.err.println("http://user:abcdefghijk\n" +
+                "lmnoprqst@jetbrains.com");
 
         createAndSavePerson("David", 28);
         assertEquals(2, countRowsInTable("person"));
@@ -50,7 +61,8 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
-    @Ignore("Age not saved correctly 123456")
+    @Ignore("abcdefghijk\n" +
+            "lmnoprqst")
     public void testDelete() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
