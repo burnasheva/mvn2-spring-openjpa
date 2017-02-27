@@ -33,15 +33,11 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         }
 
 
-        System.out.println("abcdefghijk\n" +
-                "lmnoprqst");
-        System.err.println("abcdefghijk\n" +
-                "lmnoprqst");
+        System.out.println("abcdefghijk");
+        System.err.println("abcdefghijk");
 
-        System.out.println("http://user:abcdefghijk\n" +
-                "lmnoprqst@jetbrains.com");
-        System.err.println("http://user:abcdefghijk\n" +
-                "lmnoprqst@jetbrains.com");
+        System.out.println("http://user:abcdefghijk@jetbrains.com");
+        System.err.println("http://user:abcdefghijk@jetbrains.com");
 
         createAndSavePerson("David", 28);
         assertEquals(2, countRowsInTable("person"));
@@ -61,8 +57,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
-    @Ignore("abcdefghijk\n" +
-            "lmnoprqst")
+    @Ignore("abcdefghijk")
     public void testDelete() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
