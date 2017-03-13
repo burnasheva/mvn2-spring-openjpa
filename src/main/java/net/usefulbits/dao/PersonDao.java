@@ -11,7 +11,7 @@ public interface PersonDao {
 
     void delete(Person person);
 
-    void update(Person person);
+    void update(Person person)
     
     EntityManager getEntityManager();
 }
