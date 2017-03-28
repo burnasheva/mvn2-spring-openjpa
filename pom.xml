@@ -6,17 +6,15 @@
 	<artifactId>mvn2-spring-openjpa</artifactId>
 	
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>mvn2-spring-openjpa</name>
-	<url>http://github.com/spidie/mvn2-spring-openjpa</url>
-	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.4</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency>	
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
@@ -47,7 +45,7 @@
 			<groupId>javax.annotation</groupId>
 			<artifactId>jsr250-api</artifactId>
 			<version>1.0</version>
-		</dependency>
+		</dependency>	
 	</dependencies>
 	
 	<build>
@@ -58,7 +56,6 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-
 		<testResources>
 			<testResource>
 				<directory>${project.basedir}/src/test/resources
@@ -74,9 +71,45 @@
 					<target>1.5</target>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.8</version>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+						   <goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<serverId>nexus</serverId>
+					<nexusUrl>http://nexus-test.labs.intellij.net:8081/repository/maven-snapshots/</nexusUrl>
+					<skipStaging>true</skipStaging>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
-	
+
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://nexus-test.labs.intellij.net:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<properties>
 		<jdbc.driverClassName>org.hsqldb.jdbcDriver
 		</jdbc.driverClassName>
@@ -86,4 +119,5 @@
 		<jpa.database>HSQL</jpa.database>
 		<jpa.showSql>true</jpa.showSql>
 	</properties>
+	
 </project>

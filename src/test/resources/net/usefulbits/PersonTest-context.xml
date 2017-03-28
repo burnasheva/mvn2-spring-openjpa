@@ -13,11 +13,8 @@
 
     <!-- bean post-processor for JPA annotations -->
     <context:annotation-config/>
-
     <tx:annotation-driven />
-
     <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
-
     <bean id="personDao" class="net.usefulbits.dao.JpaPersonDao" />
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
@@ -26,7 +23,9 @@
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
 		p:dataSource-ref="dataSource" p:jpaVendorAdapter-ref="jpaAdapter">
 		<property name="loadTimeWeaver">
+			
 			<bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
+			
 		</property>
 	</bean>
 

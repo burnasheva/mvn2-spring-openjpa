@@ -1,4 +1,4 @@
-	package net.usefulbits.model;
+package net.usefulbits.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,6 +11,7 @@ public class Person {
     
     public void setId(long id) {
         fId = id;
+        fId = id;
     }
     
     @Id
@@ -20,6 +21,7 @@ public class Person {
     
     public void setName(String name) {
         fName = name;
+        fName = name;
     }
     
     public String getName() {
@@ -27,6 +29,7 @@ public class Person {
     }
     
     public void setAge(int age) {
+        fAge = age;
         fAge = age;
     }
     

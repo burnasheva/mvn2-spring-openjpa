@@ -1,12 +1,12 @@
 package net.usefulbits;
 
+import org.junit.Ignore;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 import net.usefulbits.dao.PersonDao;
 import net.usefulbits.model.Person;
 
@@ -25,16 +25,30 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
-    public void testSave() {
+    public void test_save_smth_bla() {
+        try{
+            Thread.sleep(10000);
+        } catch (InterruptedException ie){
+
+        }
+
+
+        System.out.println("abcdefghijk");
+        System.err.println("abcdefghijk");
+
+        System.out.println("http://user:abcdefghijk@jetbrains.com");
+        System.err.println("http://user:abcdefghijk@jetbrains.com");
+
         createAndSavePerson("David", 28);
-        assertEquals(1, countRowsInTable("person"));
+        assertEquals(2, countRowsInTable("person"));
 
         Person david = getSinglePerson();
         assertEquals("Name not saved correctly", "David", david.getName());
-        assertEquals("Age not saved correctly", 28, david.getAge());
+        assertEquals("Age not saved correctly 123456", 22, david.getAge());
     }
 
     @Test
+    @Ignore("http://user:123456@jetbrains.com")
     public void testGetById() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
@@ -43,6 +57,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
+    @Ignore("abcdefghijk")
     public void testDelete() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
@@ -72,7 +87,6 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
         public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
             Person result = new Person();
             result.setName(rs.getString("name"));
-            result.setAge(rs.getInt("age"));
             return result;
         }
     }
