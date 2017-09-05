@@ -25,7 +25,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     @Test
-    public void test_save_smth_bla() {
+    public void simpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäß() {
         try{
             Thread.sleep(10000);
         } catch (InterruptedException ie){
@@ -49,7 +49,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
 
     @Test
     @Ignore("http://user:123456@jetbrains.com")
-    public void testGetById() {
+    public void simpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßdfdfdf() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
         assertEquals(david.getName(), "David");
@@ -58,7 +58,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
 
     @Test
     @Ignore("abcdefghijk")
-    public void testDelete() {
+    public void simpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßsimpleTestWithAttachmentsÜÖäßTest() {
         createAndSavePerson("David", 28);
         Person david = fPersonDao.getById(0);
         fPersonDao.delete(david);
