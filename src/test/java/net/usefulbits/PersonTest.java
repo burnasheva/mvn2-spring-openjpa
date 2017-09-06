@@ -52,4 +52,10 @@ public class PersonTest {
     public void shortTestNameÄÜ(){
         assertFalse (true);
     }
+
+    @Test
+    @Ignore("ignore test with simple name")
+    public void shuldBeIgnored(){
+        assertTrue(false);
+    }
 }
