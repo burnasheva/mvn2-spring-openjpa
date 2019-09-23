@@ -8,7 +8,7 @@
 	<artifactId>mvn2-spring-openjpa</artifactId>
 	<packaging>jar</packaging>
 	
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	
 	<name>mvn2-spring-openjpa</name>
 
@@ -85,10 +85,10 @@
 	</build>
 
 	<distributionManagement>
-		<snapshotRepository>
+		<repository>
 			<id>nexus</id>
-			<url>http://nexus-test.labs.intellij.net:8081/repository/maven-snapshots/</url>
-		</snapshotRepository>
+			<url>http://nexus-test.labs.intellij.net:8081/repository/maven-releases/</url>
+		</repository>
 	</distributionManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
