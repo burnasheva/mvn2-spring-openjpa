@@ -88,7 +88,6 @@
 	</distributionManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<deploy.version>0.0.1-SNAPSHOT</deploy.version>
 	</properties>
 	
 </project>
