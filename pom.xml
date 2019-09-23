@@ -72,7 +72,7 @@
 				</executions>
 				<configuration>
 					<serverId>nexus</serverId>
-					<nexusUrl>http://nexus-test.labs.intellij.net:8081/repository/maven-snapshots/</nexusUrl>
+					<nexusUrl>http://nexus-test.labs.intellij.net:8081/repository/maven-releases/</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
 			</plugin>
