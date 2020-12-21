@@ -6,6 +6,7 @@ What is mvn2-spring-openjpa
 
 This project is intended to serve as an example of an integration test using Maven 2, Spring 2,
 JPA, Open JPA.  I have intentionally left the project as simple as possible so
+
 that it might be useful to others that are trying to implements similar integration tests in their
 projects.
 
