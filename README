@@ -8,6 +8,7 @@ This project is intended to serve as an example of an integration test using Mav
 JPA, Open JPA.  I have intentionally left the project as simple as possible so
 that it might be useful to others that are trying to implements similar integration tests in their
 projects.
+
 What's so great about mvn2-spring-openjpa?
 Besides installing Java 5 (you've installed this already, right?) and Maven 2, this project
 requires no other "manual" downloads.  Maven 2 takes care of all dependency management issues.
