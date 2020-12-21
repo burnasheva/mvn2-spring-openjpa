@@ -38,4 +38,5 @@ net.usefulbits.Person to the database and then quering the database to make sure
 Person was actually saved.
 
 What about mvn2-spring-jpa?
+
 This sample was taken from David Krisch's excellent mvn2-spring-jpa sample at http://code.google.com/p/mvn2-spring-jpa and adapted for use with openjpa by Steve Dalton. If you are using Hibernate have a look at mvn2-spring-jpa, but if you've never used Hibernate before and need to deploy to a standard JEE container - openjpa might be for you.
